@@ -11,8 +11,7 @@ public class Service {
 	public Employee getEmployeeInJSON() {
 
 		Employee e1 = new Employee(1,"Kenta","Shikata","shikata@gmail.com","0551");
-		return e1; 
-
+		return e1;
 	}
 
 

@@ -20,11 +20,11 @@ import java.net.URL;
 public class Get {
 
 	// http://localhost:8080/api/tutorial/1.0/employees
-	public static void main(String[] args) {
+	public static void Get() {
 
 	  try {
 
-		URL url = new URL("http://localhost:8080/api/tutorial/1.0/employees/get");
+		URL url = new URL("http://localhost:8080/api/tutorial/1.0/employees");
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 		conn.setRequestMethod("GET");
 		conn.setRequestProperty("Accept", "application/json");
@@ -43,7 +43,6 @@ public class Get {
 		}
 
 		conn.disconnect();
-
 	  } catch (MalformedURLException e) {
 
 		e.printStackTrace();
@@ -51,9 +50,6 @@ public class Get {
 	  } catch (IOException e) {
 
 		e.printStackTrace();
-
 	  }
-
 	}
-
 }

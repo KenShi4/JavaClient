@@ -1,3 +1,5 @@
+package javaapplication1;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -9,17 +11,16 @@ import java.net.URL;
 public class Post {
 
 	//  http://localhost:8080/api/tutorial/1.0/employees
-	public static void main(String[] args) {
 
-	  try {
+            public static void Create(String input) {
+try {
 
 		URL url = new URL(" http://localhost:8080/api/tutorial/1.0/employees/post");
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 		conn.setDoOutput(true);
 		conn.setRequestMethod("POST");
 		conn.setRequestProperty("Content-Type", "application/json");
-
-		String input = "{\"id\": 1,\"firstName\":\"Kenta\",\"lastName\":\"Shikata\",\"email\":\"shikata@gmail.com\",\"phone\":\"0551\"}";
+	
 
 
 		OutputStream os = conn.getOutputStream();
@@ -53,5 +54,4 @@ public class Post {
 	 }
 
 	}
-
-}
+	}

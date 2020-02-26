@@ -2,14 +2,14 @@ package employees;
 
 public class Employee {
         
-        int id;
+        int employeeId;
 	String firstName;
 	String lastName;
         String email;
         String phone;
 
     public Employee(int id, String firstName, String lastName, String email, String phone) {
-        this.id = id;
+        this.employeeId = employeeId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -21,12 +21,12 @@ public class Employee {
     }
 
         
-    public int getId() {
-        return id;
+    public int getEmployeeId() {
+        return employeeId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
     }
 
     public String getFirstName() {
@@ -63,7 +63,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" + "id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + ", phone=" + phone + '}';
+        return "Employee{" + "employeeId=" + employeeId + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + ", phone=" + phone + '}';
     }
 	
         
