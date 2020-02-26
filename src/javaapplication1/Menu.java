@@ -51,7 +51,7 @@ class Menu
 
                     break;
                 case "f":
-
+Methods.Update();
                     break;
                 case "?":
                     System.out.println("Command Options: ");
